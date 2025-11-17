@@ -1,0 +1,11 @@
+package edu.tictactoe.service;
+
+public interface Board {
+
+    void initializeBoard();
+    boolean isLegalMove(int row, int column);
+    void updateMove(int row, int column, Piece piece);
+    Winner checkWinner();
+    void printBoard();
+
+}
